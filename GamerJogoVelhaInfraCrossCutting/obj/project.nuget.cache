@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+BnUutgnEw8/H/0Lkq9BOtBNmvr0rMqQY875b6hKQTSn9ijEvehTuU+JRn8p/K2So5xlKk56Yg4AGGI490HFUg==",
+  "dgSpecHash": "4/3ijh5RxPu+JaZFLeMK0sh2fR9NEy9OhHDRa7dgYAI/1Jp+PdxuVw8NoO4YAECJ3OUxnDDREWIwnWPX00O38w==",
   "success": true,
   "projectFilePath": "C:\\dev\\dotnet\\GamerJogoVelha\\GamerJogoVelhaInfraCrossCutting\\GamerJogoVelhaInfraCrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marce\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\fluentvalidation\\9.5.2\\fluentvalidation.9.5.2.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.2\\fluentvalidation.aspnetcore.9.5.2.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.2\\fluentvalidation.dependencyinjectionextensions.9.5.2.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",

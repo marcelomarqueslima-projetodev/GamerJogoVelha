@@ -20,6 +20,9 @@ namespace GamerJogoVelhaAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDependency(Configuration);
+            services.AddRepositoryDependency();
+            services.AddServiceDependency();
+            services.AddSwaggerDependency();
             services.AddControllers();
         }
 

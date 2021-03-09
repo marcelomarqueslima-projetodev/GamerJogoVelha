@@ -72,3 +72,6 @@ C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\GamerJogo
 C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.pdb
 C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\GamerJogoVelhaService.pdb
 C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\obj\Debug\netcoreapp3.1\GamerJogoVelhaAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

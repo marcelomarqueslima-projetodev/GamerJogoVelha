@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GamerJogoVelhaDomain.Interfaces.Services
 {
-    public interface IPlayerRepository
+    public interface IPlayerService
     {
         Player Insert(Player player);
         Player Update(Player player);

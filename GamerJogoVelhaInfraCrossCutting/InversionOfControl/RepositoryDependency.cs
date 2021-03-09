@@ -1,6 +1,16 @@
-﻿namespace GamerJogoVelhaInfraCrossCutting.InversionOfControl
+﻿using GamerJogoVelhaDomain.Interfaces.Repositories;
+using GamerJogoVelhaInfraData.Repositories;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace GamerJogoVelhaInfraCrossCutting.InversionOfControl
 {
-    public class RepositoryDependency
+    public static class RepositoryDependency
     {
+        public static void AddRepositoryDependency(this IServiceCollection services)
+        {
+            services.AddScoped<IGameRepository, GameRepository>();
+            services.AddScoped<IGameResultRepository, GameResultRepository>();
+            services.AddScoped<IPlayerRepository, PlayerRepository>();
+        }
     }
 }

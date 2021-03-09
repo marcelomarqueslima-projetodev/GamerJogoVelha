@@ -8,4 +8,8 @@
     <ProjectReference Include="..\GamerJogoVelhaDomain\GamerJogoVelhaDomain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.2" />
+  </ItemGroup>
+
 </Project>
