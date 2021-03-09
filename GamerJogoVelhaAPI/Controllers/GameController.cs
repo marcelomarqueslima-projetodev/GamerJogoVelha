@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using GamerJogoVelhaDomain.DTOs;
 using GamerJogoVelhaDomain.Entities;
 using GamerJogoVelhaDomain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -7,20 +6,25 @@ using System;
 
 namespace GamerJogoVelhaAPI.Controllers
 {
-    [ApiController]
+    /// <summary>
+    /// Criando Game
+    /// </summary>
     [Route("v1/game")]
+    [ApiController]
     public class GameController : ControllerBase
     {
         private readonly IGameService _gameService;
-        private readonly IMapper _mapper;
 
-        public GameController(IGameService gameService, IMapper mapper)
+        public GameController(IGameService gameService)
         {
             _gameService = gameService;
-            _mapper = mapper;
         }
 
-        [Route("")]
+        /// <summary>
+        /// Gravando o Game criado
+        /// </summary>
+        /// <param name="game"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Register([FromBody] Game game)
         {
@@ -40,27 +44,35 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
-        [Route("")]
-        [HttpPut("{id}")]
-        public IActionResult Update([FromBody] long id, GameDto gameDto)
+        /// <summary>
+        /// Atualizando Game exitente
+        /// </summary>
+        /// <param name="game"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public IActionResult Update([FromBody] Game game)
         {
-            var game = _gameService.RecoverById(id);
-            if (game == null)
+            try
             {
-                return BadRequest("Game não encontrado!");
+                _gameService.Update(game);
+
+                return Ok(game);
             }
-
-            _mapper.Map(gameDto, game);
-
-            _gameService.Update(game);
-            if (_gameService.Update(game) != null)
+            catch (ArgumentNullException ex)
             {
-                return Created($"/api/aluno/{game.Id}", _mapper.Map<GameDto>(game));
+                return NotFound(ex);
             }
-            return BadRequest("Game não Atualizado.");
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
 
-        [Route("")]
+        /// <summary>
+        /// Removendo Game
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public IActionResult Remove([FromRoute] long id)
         {
@@ -80,7 +92,10 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
-        [Route("")]
+        /// <summary>
+        /// Buscando todos os games
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult RecoverAll()
         {
@@ -94,7 +109,11 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
-        [Route("")]
+        /// <summary>
+        /// Buscando um Game espeficico por ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult Recover([FromRoute] long id)
         {

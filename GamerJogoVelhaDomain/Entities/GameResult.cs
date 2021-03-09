@@ -12,5 +12,12 @@ namespace GamerJogoVelhaDomain.Entities
         public Player Player { get; set; }
         public long? Win { get; set; } = null;
         public DateTime? LastGame { get; set; }
+        public int? PartGame { get; set; } = 0;
+
+
+        public void MarkAsPartGame()
+        {
+            PartGame = PartGame + 1;
+        }
     }
 }

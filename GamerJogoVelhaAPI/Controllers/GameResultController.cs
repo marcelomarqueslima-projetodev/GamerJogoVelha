@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using GamerJogoVelhaDomain.Entities;
+﻿using GamerJogoVelhaDomain.Entities;
 using GamerJogoVelhaDomain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,8 +8,8 @@ namespace GamerJogoVelhaAPI.Controllers
     /// <summary>
     /// API DE CONTROLE DE RESULTADO JOGOS
     /// </summary>
-    [ApiController]
     [Route("v1/gameresult")]
+    [ApiController]
     public class GameResultController : ControllerBase
     {
         public readonly IGameResultService _service;
@@ -18,19 +17,23 @@ namespace GamerJogoVelhaAPI.Controllers
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="repo"></param>
-        public GameResultController(IGameResultService repo, IMapper mapper)
+        /// <param name="servce"></param>
+        public GameResultController(IGameResultService service)
         {
-            _service = repo;
+            _service = service;
         }
 
-        [Route("")]
+        /// <summary>
+        /// Metodo de gravar o resultado do jogo
+        /// </summary>
+        /// <param name="gameResult"></param>
+        /// <returns></returns>
         [HttpPost]
-        public IActionResult Register([FromBody] int part, GameResult gameResult)
+        public IActionResult Register([FromBody]  GameResult gameResult)
         {
             try
             {
-                for (int i = 10; i < part; i++)
+                for (int i = 10; i < gameResult.PartGame; i++)
                 {
                     var Win = gameResult.Win;
                     _service.Insert(gameResult);

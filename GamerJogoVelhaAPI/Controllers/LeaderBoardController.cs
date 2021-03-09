@@ -1,10 +1,12 @@
-﻿using AutoMapper;
-using GamerJogoVelhaDomain.Interfaces.Services;
+﻿using GamerJogoVelhaDomain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace GamerJogoVelhaAPI.Controllers
 {
+    /// <summary>
+    /// Fonte de informação para Dashboard
+    /// </summary>
     [Route("v1/leaderboard")]
     [ApiController]
     public class LeaderBoardController : ControllerBase
@@ -15,14 +17,15 @@ namespace GamerJogoVelhaAPI.Controllers
         /// 
         /// </summary>
         /// <param name="repo"></param>
-        /// <param name="mapper"></param>
-        public LeaderBoardController(IGameResultService repo, IMapper mapper)
+        public LeaderBoardController(IGameResultService service)
         {
-            _service = repo;
+            _service = service;
         }
 
-
-        [Route("")]
+        /// <summary>
+        /// Busca todos os resultados dos Players
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult RecoverAll()
         {
@@ -36,7 +39,11 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
-        [Route("")]
+        /// <summary>
+        /// Buscar os resultado de um Player por ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult Recover([FromRoute] int id)
         {
