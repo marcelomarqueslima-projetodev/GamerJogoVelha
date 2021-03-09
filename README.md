@@ -5,7 +5,14 @@ Comando UPdate-Database
 
 Utilização de Swagger para teste
 
-http://localhost:53710/api/v1/gameresult
+Endepoint para criar Player
+https://localhost:44302/v1/player
 
-http://localhost:53710/api/v1/leaderboard
+Endepoint para criar Game
+https://localhost:44302/v1/game
 
+Endepoint para Consulta Placar
+https://localhost:44302/v1/leaderboard
+
+Endepoint utilizado para gravar resultado
+https://localhost:44302/v1/gameresult
