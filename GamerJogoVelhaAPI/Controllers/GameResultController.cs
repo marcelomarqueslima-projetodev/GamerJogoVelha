@@ -10,8 +10,7 @@ namespace GamerJogoVelhaAPI.Controllers
     /// API DE CONTROLE DE RESULTADO JOGOS
     /// </summary>
     [ApiController]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    [Route("v1/gameresult")]
     public class GameResultController : ControllerBase
     {
         public readonly IGameResultService _service;
@@ -25,6 +24,7 @@ namespace GamerJogoVelhaAPI.Controllers
             _service = repo;
         }
 
+        [Route("")]
         [HttpPost]
         public IActionResult Register([FromBody] int part, GameResult gameResult)
         {

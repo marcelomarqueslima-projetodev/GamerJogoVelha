@@ -2,18 +2,13 @@
 using GamerJogoVelhaDomain.DTOs;
 using GamerJogoVelhaDomain.Entities;
 using GamerJogoVelhaDomain.Interfaces.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GamerJogoVelhaAPI.Controllers
 {
     [ApiController]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    [Route("v1/game")]
     public class GameController : ControllerBase
     {
         private readonly IGameService _gameService;
@@ -25,6 +20,7 @@ namespace GamerJogoVelhaAPI.Controllers
             _mapper = mapper;
         }
 
+        [Route("")]
         [HttpPost]
         public IActionResult Register([FromBody] Game game)
         {
@@ -44,7 +40,8 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
-        [HttpPut]
+        [Route("")]
+        [HttpPut("{id}")]
         public IActionResult Update([FromBody] long id, GameDto gameDto)
         {
             var game = _gameService.RecoverById(id);
@@ -63,6 +60,7 @@ namespace GamerJogoVelhaAPI.Controllers
             return BadRequest("Game não Atualizado.");
         }
 
+        [Route("")]
         [HttpDelete("{id}")]
         public IActionResult Remove([FromRoute] long id)
         {
@@ -82,6 +80,7 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
+        [Route("")]
         [HttpGet]
         public IActionResult RecoverAll()
         {
@@ -95,6 +94,7 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
+        [Route("")]
         [HttpGet("{id}")]
         public IActionResult Recover([FromRoute] long id)
         {

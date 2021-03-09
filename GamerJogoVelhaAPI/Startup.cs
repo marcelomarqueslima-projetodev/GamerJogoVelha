@@ -22,26 +22,16 @@ namespace GamerJogoVelhaAPI
             services.AddRepositoryDependency();
             services.AddServiceDependency();
             services.AddSwaggerDependency();
-            services.AddControllers();
+            services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
 
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseSwaggerDependency();
+            app.UseMvc();
         }
     }
 }

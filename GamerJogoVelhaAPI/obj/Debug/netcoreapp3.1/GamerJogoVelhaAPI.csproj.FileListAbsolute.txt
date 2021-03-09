@@ -75,3 +75,4 @@ C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\obj\Debug\netcoreapp3.1\GamerJogo
 C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll

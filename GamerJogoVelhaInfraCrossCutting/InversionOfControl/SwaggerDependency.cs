@@ -26,7 +26,7 @@ namespace GamerJogoVelhaInfraCrossCutting.InversionOfControl
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gamer Jogo da Velha API");
+                c.SwaggerEndpoint("/v1/swagger.json", "Gamer Jogo da Velha API");
                 c.DocumentTitle = "Gamer Jogo da Velha API";
                 c.DocExpansion(DocExpansion.List);
             });

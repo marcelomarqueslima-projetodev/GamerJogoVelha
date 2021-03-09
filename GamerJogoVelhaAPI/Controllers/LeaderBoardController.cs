@@ -5,9 +5,8 @@ using System;
 
 namespace GamerJogoVelhaAPI.Controllers
 {
+    [Route("v1/leaderboard")]
     [ApiController]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
     public class LeaderBoardController : ControllerBase
     {
         public readonly IGameResultService _service;
@@ -23,6 +22,7 @@ namespace GamerJogoVelhaAPI.Controllers
         }
 
 
+        [Route("")]
         [HttpGet]
         public IActionResult RecoverAll()
         {
@@ -36,6 +36,7 @@ namespace GamerJogoVelhaAPI.Controllers
             }
         }
 
+        [Route("")]
         [HttpGet("{id}")]
         public IActionResult Recover([FromRoute] int id)
         {
