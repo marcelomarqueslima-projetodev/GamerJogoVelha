@@ -50,5 +50,29 @@ namespace GamerJogoVelhaAPI.Controllers
                 return BadRequest(ex);
             }
         }
+
+        /// <summary>
+        /// Atualização PartGame 
+        /// </summary>
+        /// <param name="game"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public IActionResult Update([FromBody] GameResult game)
+        {
+            try
+            {
+                _service.Update(game);
+
+                return Ok(game);
+            }
+            catch (ArgumentNullException ex)
+            {
+                return NotFound(ex);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
     }
 }

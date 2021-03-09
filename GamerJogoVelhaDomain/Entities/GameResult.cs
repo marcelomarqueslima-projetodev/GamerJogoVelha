@@ -14,8 +14,7 @@ namespace GamerJogoVelhaDomain.Entities
         public DateTime? LastGame { get; set; }
         public int? PartGame { get; set; } = 0;
 
-
-        public void MarkAsPartGame()
+        public void MakAsPartGame()
         {
             PartGame = PartGame + 1;
         }
