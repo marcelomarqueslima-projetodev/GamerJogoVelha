@@ -11,15 +11,15 @@ namespace GamerJogoVelhaAPI.Controllers
     [ApiController]
     public class LeaderBoardController : ControllerBase
     {
-        public readonly IGameResultService _service;
+        public readonly IGameResultService _gameResultService;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="repo"></param>
-        public LeaderBoardController(IGameResultService service)
+        public LeaderBoardController(IGameResultService gameResultService)
         {
-            _service = service;
+            _gameResultService = gameResultService;
         }
 
         /// <summary>
@@ -31,7 +31,8 @@ namespace GamerJogoVelhaAPI.Controllers
         {
             try
             {
-                return Ok(_service.Browse());
+                var result = _gameResultService.Browse();
+                return Ok(result);
             }
             catch (Exception ex)
             {
@@ -45,11 +46,12 @@ namespace GamerJogoVelhaAPI.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public IActionResult Recover([FromRoute] int id)
+        public IActionResult Recover([FromRoute] long id)
         {
             try
             {
-                return Ok(_service.RecoverById(id));
+                var result = _gameResultService.RecoverById(id);
+                return Ok(result);
             }
             catch (ArgumentException ex)
             {

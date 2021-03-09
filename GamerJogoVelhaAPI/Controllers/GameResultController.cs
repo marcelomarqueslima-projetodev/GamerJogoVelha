@@ -8,7 +8,7 @@ namespace GamerJogoVelhaAPI.Controllers
     /// <summary>
     /// API DE CONTROLE DE RESULTADO JOGOS
     /// </summary>
-    [Route("v1/gameresult")]
+    [Route("v1/game-result")]
     [ApiController]
     public class GameResultController : ControllerBase
     {
