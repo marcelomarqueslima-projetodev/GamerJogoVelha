@@ -1,5 +1,5 @@
-﻿using GamerJogoVelhaDomain.Interfaces.Repositories;
-using GamerJogoVelhaDomain.Shareds;
+﻿using GamerJogoVelhaDomain.Entities;
+using GamerJogoVelhaDomain.Interfaces.Repositories;
 using GamerJogoVelhaInfraData.Context;
 using System.Collections.Generic;
 
@@ -7,7 +7,7 @@ namespace GamerJogoVelhaInfraData.Repositories
 {
     public class GameResultRepository : BaseRepository<GameResult, long>, IGameResultRepository
     {
-        public GameResultRepository(ApplicationContext context) : base(context)
+        public GameResultRepository(GameContext context) : base(context)
         {
         }
 
@@ -22,7 +22,7 @@ namespace GamerJogoVelhaInfraData.Repositories
 
         public void Save(GameResult gameResult)
         {
-            if (gameResult.Id == 0)
+            if (gameResult.GameId == 0 && gameResult.PlayerId == 0)
             {
                 base.Insert(gameResult);
             }

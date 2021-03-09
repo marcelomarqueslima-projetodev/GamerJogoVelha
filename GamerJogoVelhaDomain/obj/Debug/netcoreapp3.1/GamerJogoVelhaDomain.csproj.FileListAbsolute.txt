@@ -1,0 +1,9 @@
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\bin\Debug\netcoreapp3.1\GamerJogoVelhaDomain.deps.json
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\bin\Debug\netcoreapp3.1\GamerJogoVelhaDomain.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\bin\Debug\netcoreapp3.1\GamerJogoVelhaDomain.pdb
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\obj\Debug\netcoreapp3.1\GamerJogoVelhaDomain.csprojAssemblyReference.cache
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\obj\Debug\netcoreapp3.1\GamerJogoVelhaDomain.AssemblyInfoInputs.cache
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\obj\Debug\netcoreapp3.1\GamerJogoVelhaDomain.AssemblyInfo.cs
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\obj\Debug\netcoreapp3.1\GamerJogoVelhaDomain.csproj.CoreCompileInputs.cache
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\obj\Debug\netcoreapp3.1\GamerJogoVelhaDomain.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaDomain\obj\Debug\netcoreapp3.1\GamerJogoVelhaDomain.pdb

@@ -1,12 +1,8 @@
-﻿using GamerJogoVelhaDomain.Enum;
-using System;
-
-namespace GamerJogoVelhaDomain.DTOs
+﻿namespace GamerJogoVelhaDomain.DTOs
 {
     public class PlayerDto
     {
-        public string PlayerName { get; set; }
-        public DateTime? Birthday { get; set; }
-        public RegisterStatusEnum? RegisterStatus { get; set; }
+        public string NamePlayer { get; set; }
+        public string SiglaPlayer { get; set; }
     }
 }

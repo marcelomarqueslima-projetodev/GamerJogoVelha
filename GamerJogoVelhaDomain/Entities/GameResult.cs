@@ -1,12 +1,15 @@
-﻿using GamerJogoVelhaDomain.Entities;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace GamerJogoVelhaDomain.Shareds
+namespace GamerJogoVelhaDomain.Entities
 {
-    public class GameResult : BaseEntity<long>
+    public class GameResult : EntityBase<long>
     {
-        public Game GameId { get; set; }
-        public Player PlayerId { get; set; }
+        public long GameId { get; set; }
+        public Game Game { get; set; }
+        public long PlayerId { get; set; }
+        public Player Player { get; set; }
         public long? Win { get; set; } = null;
         public DateTime? LastGame { get; set; }
     }

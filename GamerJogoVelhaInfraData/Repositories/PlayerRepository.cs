@@ -7,7 +7,7 @@ namespace GamerJogoVelhaInfraData.Repositories
 {
     public class PlayerRepository : BaseRepository<Player, long>, IPlayerRepository
     {
-        public PlayerRepository(ApplicationContext context) : base(context)
+        public PlayerRepository(GameContext context) : base(context)
         {
         }
 

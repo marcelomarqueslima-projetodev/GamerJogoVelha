@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fF8pEqbp+fZq3KrV+mUvq27UUdYYn0br/aNMYeevx6lLfeeX76fPyLVdNzulnIAdxVs8KSTIOfDy9NIHlvA1sw==",
+  "success": true,
+  "projectFilePath": "C:\\dev\\dotnet\\GamerJogoVelha\\GamerJogoVelhaDomain\\GamerJogoVelhaDomain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

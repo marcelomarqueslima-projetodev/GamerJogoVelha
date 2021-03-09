@@ -1,4 +1,4 @@
-﻿using GamerJogoVelhaDomain.Shareds;
+﻿using GamerJogoVelhaDomain.Entities;
 using System.Collections.Generic;
 
 namespace GamerJogoVelhaDomain.Interfaces.Repositories

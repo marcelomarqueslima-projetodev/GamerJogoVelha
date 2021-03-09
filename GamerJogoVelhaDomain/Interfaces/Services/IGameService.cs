@@ -1,5 +1,4 @@
 ﻿using GamerJogoVelhaDomain.Entities;
-using System;
 using System.Collections.Generic;
 
 namespace GamerJogoVelhaDomain.Interfaces.Services

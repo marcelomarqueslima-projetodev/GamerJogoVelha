@@ -1,13 +1,8 @@
-﻿using GamerJogoVelhaDomain.Enum;
-using GamerJogoVelhaDomain.Shareds;
-using System;
-
-namespace GamerJogoVelhaDomain.Entities
+﻿namespace GamerJogoVelhaDomain.Entities
 {
-    public class Game : BaseEntity<long>
+    public class Game : EntityBase<long>
     {
-        public string GameName { get; set; }
-        public RegisterStatusEnum RegisterStatus { get; set; }
-        public DateTime RegiterUser { get; set; } = DateTime.UtcNow;
+        public string NameGame { get; set; }
+        public string SiglaGame { get; set; }
     }
 }

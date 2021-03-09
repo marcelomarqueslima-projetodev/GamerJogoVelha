@@ -1,10 +1,8 @@
-﻿using GamerJogoVelhaDomain.Enum;
-
-namespace GamerJogoVelhaDomain.DTOs
+﻿namespace GamerJogoVelhaDomain.DTOs
 {
     public class GameDto
     {
-        public string UserName { get; set; }
-        public RegisterStatusEnum RegisterStatus { get; set; }
+        public string NameGame { get; set; }
+        public string SiglaGame { get; set; }
     }
 }

@@ -1,7 +1,5 @@
-﻿using GamerJogoVelhaDomain.Shareds;
-using System;
+﻿using GamerJogoVelhaDomain.Entities;
 using System.Collections.Generic;
-using System.Text;
 
 namespace GamerJogoVelhaDomain.Interfaces.Services
 {
@@ -12,6 +10,5 @@ namespace GamerJogoVelhaDomain.Interfaces.Services
         void Delete(long id);
         GameResult RecoverById(long id);
         IList<GameResult> Browse();
-        void ValidateGame();
     }
 }

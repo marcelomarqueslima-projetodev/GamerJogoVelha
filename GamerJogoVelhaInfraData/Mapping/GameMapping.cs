@@ -12,10 +12,17 @@ namespace GamerJogoVelhaInfraData.Mapping
 
             builder.HasKey(c => c.Id);
 
-            builder.Property(c => c.GameName)
+            builder.Property(c => c.NameGame)
                 .IsRequired()
                 .HasMaxLength(250)
+                .HasColumnType("varchar(250)")
                 .HasColumnName("GameName");
+
+            builder.Property(c => c.SiglaGame)
+                .IsRequired()
+                .HasMaxLength(4)
+                .HasColumnType("varchar(4)")
+                .HasColumnName("SiglaGame");
         }
     }
 }

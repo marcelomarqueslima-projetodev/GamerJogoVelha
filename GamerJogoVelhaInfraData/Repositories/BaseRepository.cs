@@ -1,17 +1,16 @@
-﻿using GamerJogoVelhaDomain.Shareds;
+﻿using GamerJogoVelhaDomain.Entities;
 using GamerJogoVelhaInfraData.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace GamerJogoVelhaInfraData.Repositories
 {
-    public class BaseRepository<T, B> where T : BaseEntity<B>
+    public class BaseRepository<T, B> where T : EntityBase<B>
     {
-        protected readonly ApplicationContext _context;
+        protected readonly GameContext _context;
 
-        public BaseRepository(ApplicationContext context)
+        public BaseRepository(GameContext context)
         {
             _context = context;
         }

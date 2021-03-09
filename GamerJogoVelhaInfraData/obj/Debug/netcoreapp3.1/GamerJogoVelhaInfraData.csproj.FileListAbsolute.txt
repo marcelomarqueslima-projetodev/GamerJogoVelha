@@ -1,0 +1,15 @@
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.deps.json
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.pdb
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.csprojAssemblyReference.cache
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.AssemblyInfoInputs.cache
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.AssemblyInfo.cs
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.csproj.CoreCompileInputs.cache
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.pdb
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.runtimeconfig.json
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.runtimeconfig.dev.json
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaDomain.dll
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\bin\Debug\netcoreapp3.1\GamerJogoVelhaDomain.pdb
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.csproj.CopyComplete
+C:\dev\dotnet\GamerJogoVelha\GamerJogoVelhaInfraData\obj\Debug\netcoreapp3.1\GamerJogoVelhaInfraData.genruntimeconfig.cache

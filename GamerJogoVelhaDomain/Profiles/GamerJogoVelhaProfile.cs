@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using GamerJogoVelhaDomain.DTOs;
 using GamerJogoVelhaDomain.Entities;
-using GamerJogoVelhaDomain.Shareds;
 
 namespace GamerJogoVelhaDomain.Profiles
 {
