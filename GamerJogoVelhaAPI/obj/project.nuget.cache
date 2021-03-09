@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CB0jxHoOIbJkTOa1GoJdm3A3qY/6PEIMMP4GCNB4wFNiXL9p2YXW5hDONsQHYVtTanWlJizXlyibjQKH24KQ2g==",
+  "dgSpecHash": "gk6VdPr3iOr3sJxsByM6c/BXjob2DZ994cFUhah1WRBKWNHVZbyFOlfRToTe2k6qUDMryT5pdq+b9aScHwupfA==",
   "success": true,
   "projectFilePath": "C:\\dev\\dotnet\\GamerJogoVelha\\GamerJogoVelhaAPI\\GamerJogoVelhaAPI.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\marce\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
